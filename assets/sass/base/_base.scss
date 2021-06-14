@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+  
+body {
+    font-family: monospace;
+  }
+
+  h1{
+    display: block;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }  
+
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 97px 1fr auto;
+  grid-template-columns: 100vw;
+  grid-template-areas: "nav" "contenido" "footer";
+}  
+
+// Grid
+.navbar{grid-area: nav;}
+.contenido{grid-area: contenido;}
+.main{grid-area: main;}
+.aside{grid-area: aside;}
+.footer{grid-area: footer;}

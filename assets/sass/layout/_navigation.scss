@@ -1,0 +1,32 @@
+.navbar {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid $gray;
+
+    &__brand{
+        text-transform: uppercase;
+        display: inline-block;
+        position: absolute; 
+    }
+  }
+  
+  .navigation {
+    text-align: right;
+    position: relative;
+    float: right;
+
+    &__item{
+        text-decoration: none;
+        text-transform: uppercase;
+        list-style-type: none;
+        display: inline;    
+    }
+
+    &__item:first-child {
+        display: none;
+      }
+
+    &__item--input-menu {
+        border-radius: 30px;
+      }  
+  }
